@@ -1,1 +1,27 @@
 /* write your override styles here */
+
+#wall .tag-1 {
+  display: none;
+}
+/* Original */
+.tag-1 {
+  display: block;
+}
+
+/* Override */
+div#wall div.parent .tag-1 {
+  display: none;
+}
+/* Original */
+#wall {
+  background: url(../images/wall.jpg) no-repeat center;
+  box-shadow: 15px 15px 47px lime, -15px -15px 47px aqua;
+}
+
+/* Override with higher specificity */
+body #wall {
+  background: #222;
+  box-shadow: none;
+}
+
+
